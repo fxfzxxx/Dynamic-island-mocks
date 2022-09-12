@@ -1,14 +1,44 @@
 * {
   margin: 0;
 }
+
 .background {
   height: 800px;
   width: 350;
   border-radius: 70px;
   background-image: url(./img/iphone.jpg);
   background-repeat: no-repeat;
-  z-index: 2;
+  /* z-index: 2; */
   /* position: relative; */
+}
+@keyframes tips {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 130% 0;
+  }
+}
+.background > .tips {
+  float: left; /* 不设置的话无法正常显示 */
+  margin-left: 40px;
+  margin-top: 250px;
+  color: #ccc;
+  font: caption;
+  font-size: x-large;
+  font-weight: bold;
+  background: rgb(179, 177, 177)
+    linear-gradient(
+      90deg,
+      rgb(179, 177, 177),
+      rgba(255, 255, 255),
+      /* 默认是白色 自己更改即可 */ rgb(179, 177, 177)
+    );
+  background-size: 100px 60px;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: tips 2s linear infinite;
 }
 .dynamic-island {
   height: 34px;
@@ -22,6 +52,15 @@
 }
 .dynamic-island > img {
   opacity: 0;
+}
+.crazy-Thursday {
+  padding-left: 65px;
+  padding-top: 2px;
+  color: #ccc;
+  font: caption;
+  font-size: x-large;
+  font-weight: bold;
+  transition: opacity 1s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .indicator {
@@ -58,14 +97,14 @@
   width: 200px;
 }
 .horizontal-expand > img {
-  transition: opacity 0.1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.86s;
+  transition: opacity 0.1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s;
   opacity: 1;
   padding-top: 4px;
   padding-left: 12px;
   width: 180px;
 }
 .vertical-expand {
-   top: 21px;
+  top: 21px;
   left: 132px;
   width: 130px;
   height: 130px;
@@ -79,44 +118,44 @@
   width: 100px;
 }
 .full-expand {
-   top: 25px;
+  top: 25px;
   left: 33px;
   width: 325px;
   height: 160px;
   border-radius: 40px;
 }
 .full-expand > img {
-   transition: opacity 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
-   opacity: 1;
-   padding-top: 12px;
-   padding-left: 18px;
-   width: 280px;
+  transition: opacity 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
+  opacity: 1;
+  padding-top: 12px;
+  padding-left: 18px;
+  width: 280px;
 }
 .rect-expand {
-   top: 25px;
+  top: 25px;
   left: 46px;
   width: 300px;
   height: 35px;
   border-radius: 40px;
 }
 .rect-expand > img {
-   transition: opacity 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
-   opacity: 90%;
-   padding-top: 7px;
-   padding-left: 12px;
-   width: 280px;
+  transition: opacity 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
+  opacity: 90%;
+  padding-top: 7px;
+  padding-left: 12px;
+  width: 280px;
 }
 .call-expand {
-   top: 25px;
+  top: 25px;
   left: 30px;
   width: 330px;
   height: 80px;
   border-radius: 40px;
 }
 .call-expand > img {
-   transition: opacity 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
-   opacity: 1;
-   padding-top: 15px;
-   padding-left: 16px;
-   width: 300px;
+  transition: opacity 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
+  opacity: 1;
+  padding-top: 15px;
+  padding-left: 16px;
+  width: 300px;
 }
