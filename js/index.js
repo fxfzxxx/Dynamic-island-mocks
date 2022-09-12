@@ -36,7 +36,9 @@ dynamicIsland.addEventListener("click", () => {
     img.setAttribute("src", "./img/rec1.jpg")
     dynamicIsland.appendChild(textFrg)
   } else if (flag === 5) {
-   img.setAttribute("src", "")
+    setTimeout(() => {
+      img.setAttribute("src", "")
+    }, 100)
    // const textFrgShow = document.querySelector(".crazy-Thursday , .hidden")
    textFrg.className = "crazy-Thursday"
   }
