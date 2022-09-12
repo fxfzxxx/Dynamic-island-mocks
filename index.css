@@ -37,7 +37,7 @@
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: tips 2s linear infinite;
+  animation: tips 4s linear infinite;
 }
 .dynamic-island {
   height: 34px;
@@ -54,7 +54,7 @@
 }
 .crazy-Thursday {
   padding-left: 65px;
-  padding-top: 2px;
+  padding-top: 20px;
   color: #ccc;
   font: caption;
   font-size: x-large;
