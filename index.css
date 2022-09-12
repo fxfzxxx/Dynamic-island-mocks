@@ -47,14 +47,15 @@
   top: 25px;
   left: 138px;
   background-color: black;
-  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .dynamic-island > img {
   opacity: 0;
+  overflow:hidden;
 }
 .crazy-Thursday {
-  padding-left: 65px;
-  padding-top: 20px;
+  margin-left: 65px;
+  margin-top: 20px;
   color: #ccc;
   font: caption;
   font-size: x-large;
@@ -64,7 +65,7 @@
 
 .indicator {
   z-index: 999;
-  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .upper-indicator {
   height: 5px;
@@ -96,10 +97,10 @@
   width: 200px;
 }
 .horizontal-expand > img {
-  transition: opacity 0.1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s;
+  transition: opacity 0.1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
   opacity: 1;
-  padding-top: 4px;
-  padding-left: 12px;
+  margin-top: 4px;
+  margin-left: 12px;
   width: 180px;
 }
 .vertical-expand {
@@ -112,8 +113,8 @@
 .vertical-expand > img {
   transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
   opacity: 1;
-  padding-top: 20px;
-  padding-left: 16.5px;
+  margin-top: 20px;
+  margin-left: 16.5px;
   width: 100px;
 }
 .full-expand {
@@ -124,10 +125,10 @@
   border-radius: 40px;
 }
 .full-expand > img {
-  transition: opacity 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
+  transition: opacity 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s;
   opacity: 1;
-  padding-top: 12px;
-  padding-left: 18px;
+  margin-top: 12px;
+  margin-left: 18px;
   width: 280px;
 }
 .rect-expand {
@@ -140,8 +141,8 @@
 .rect-expand > img {
   transition: opacity 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
   opacity: 90%;
-  padding-top: 7px;
-  padding-left: 12px;
+  margin-top: 7px;
+  margin-left: 12px;
   width: 280px;
 }
 .call-expand {
@@ -154,7 +155,7 @@
 .call-expand > img {
   transition: opacity 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
   opacity: 1;
-  padding-top: 15px;
-  padding-left: 16px;
+  margin-top: 15px;
+  margin-left: 16px;
   width: 300px;
 }
