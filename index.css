@@ -20,18 +20,20 @@
   }
 }
 .background > .tips {
-  float: left; /* 不设置的话无法正常显示 */
-  margin-left: 38px;
-  margin-top: 250px;
-  color: #ccc;
+ /* 不设置脱离文档流的话无法正常显示 */
+  position:absolute;
+  left: 38px;
+  top: 250px;
   font-size: x-large;
   font-weight: bold;
-  background: rgb(179, 177, 177)
+  background: rgba(179, 177, 177, 0.414)
     linear-gradient(
       90deg,
+      transparent, /* 用来虚化边缘 */
       rgb(179, 177, 177),
-      rgba(255, 255, 255),
-      /* 默认是白色 自己更改即可 */ rgb(179, 177, 177)
+      rgba(255, 255, 255),/* 默认是白色 自己更改即可 */
+       rgb(179, 177, 177),
+      transparent
     );
   background-size: 100px 60px;
   background-repeat: no-repeat;

@@ -39,7 +39,6 @@ dynamicIsland.addEventListener("click", () => {
     setTimeout(() => {
       img.remove()
     }, 100)
-   // const textFrgShow = document.querySelector(".crazy-Thursday , .hidden")
    textFrg.className = "crazy-Thursday"
   }
   else if (flag === 6) {
