@@ -21,10 +21,9 @@
 }
 .background > .tips {
   float: left; /* 不设置的话无法正常显示 */
-  margin-left: 40px;
+  margin-left: 38px;
   margin-top: 250px;
   color: #ccc;
-  font: caption;
   font-size: x-large;
   font-weight: bold;
   background: rgb(179, 177, 177)
